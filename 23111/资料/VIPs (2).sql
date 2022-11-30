@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS VIPs;
+CREATE TABLE VIPs (
+name VARCHAR(30),
+flat INT,
+landline VARCHAR(20),
+mobile VARCHAR(20)
+);
+
+INSERT INTO VIPs
+VALUES
+('Codd', 13, '496 0999', '07700 900001'),
+('Chen', NULL, NULL, '07700 900002'),
+('Everest', NULL, NULL, NULL),
+('Widenius', 8, '495 0091', '07700 900008')
+;
