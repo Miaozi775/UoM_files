@@ -1,0 +1,77 @@
+Name: ZEXIN ZHANG
+
+
+This file has been provided to help you structure your thoughts when discussing Lab 3, Part c with your marker. Some questions can be answered with a single sentence, some may require much longer answers. You are free to edit/rearrange this file as much as you want.
+
+All questions should be answered for each of your chosen data structures. 
+
+
+------------------------
+Initial Expectations
+------------------------
+
+
+>> Do you expect this data structure to be preferable to the others on all inputs, most  inputs, some inputs? Why?
+
+The hashset data structure should be preferable to the others on most inputs. Because hashset using a O(1) algorithm to calculate hashcode and locate the element. This will get good performance at insert and find opertion. 
+
+bstree will get good performance and random data. and get a worse performance when data is sorted. This will cause bstree not blance.
+
+>> Do you expect your answer to change if the order of the words in your input dictionary is in the best/worst case? Why?
+
+The order of the words in dictionary  will not change hashset's performance , but  will influence bstree's performance. Because bstree will be not blance in the sorted data, the bstree will reduce to a linked list.
+
+
+>> Can you phrase what you expect in terms of a one or two sentence hypothesis that you can test?
+
+In sentence test, darray and bstree will got similay performance. 
+
+------------------------
+Experimental Design
+------------------------
+
+
+>> How are you going to define what it means for one data stucture to be preferable to another?
+
+For some test data, if one data structure can process it use less time and less memory , then it can be preferable to others. 
+
+
+>> Which conditions will you vary in your experiment? 
+
+The process data and algorithm mode. 
+
+>> How will you vary them? Why did you make these choices? Did you use theoretical complexities, best, worst and average cases to inform your decisions?
+
+I create different data for the test. Evaluat their performance use the data. 
+
+>> How will you generate the data for your experiments?
+
+I use the generate.sh and random_strings.py generate some test data files.
+
+
+>> How will you validate your findings?
+
+After the first batch of test, I create another test suite to run another test time record. 
+
+
+------------------------
+Results and Analysis
+------------------------
+
+
+>> What results did you record?
+
+I record every data structure's run time in the test. 
+
+>> What does this tell you about the performance of the data structure?
+
+For the same data test. hashset used the most less time. We can say that hashset get the best performance. 
+
+>> What is the answer to the question "Under what conditions is it preferable to use this data structure?"
+
+When the data size is small, dynamic array can be used, it has the worst performance in the three data structures. 
+
+bstree can be used when the data is not sorted.  Sorted data will cause a bad performance in the bstree data structure.
+
+hashset has the best performance in the three data structures.  It can be used in most conditions. 
+
