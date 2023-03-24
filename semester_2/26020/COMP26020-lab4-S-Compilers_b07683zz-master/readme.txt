@@ -1,0 +1,2 @@
+It is a python 3 source file, use code "python3 program.py input.txt output.txt" under python environment to run the code.
+Copy the test content to the input.txt file and run program.py, the result will show in the output.txt file.
